@@ -15,7 +15,12 @@ class UsuarioTableSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         \App\Models\Usuario::factory(10)->create();
         //\App\Models\Usuario::factory()->times(10)->create();
+=======
+        \App\Models\UsuarioModel::factory(10)->create();
+        \App\Models\UsuarioModel::factory()->times(10)->create();
+>>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
     }
 }

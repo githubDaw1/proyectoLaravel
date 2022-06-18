@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 /*Route::get('/', function () {
     return view('welcome');
 });*/
@@ -45,3 +46,14 @@ Route::get('/etiqueta', function () {
 Route::view('etiqueta', 'etiqueta');
 
 Route::get("etiqueta", [EtiquetaController::class, 'show']);
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+>>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f

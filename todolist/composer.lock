@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "3fe9cc80c491d6297581ddbc560b2eec",
+=======
+    "content-hash": "40df9212f8f26b10de86cc9ab41c8eca",
+>>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -958,6 +962,7 @@
             "time": "2022-06-09T08:26:02+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "inertiajs/inertia-laravel",
             "version": "v0.5.4",
             "source": {
@@ -1027,6 +1032,8 @@
             "time": "2022-01-18T10:59:08+00:00"
         },
         {
+=======
+>>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
             "name": "laravel/framework",
             "version": "v8.83.16",
             "source": {
@@ -1392,6 +1399,7 @@
             "time": "2022-03-23T12:38:24+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/ui",
             "version": "v3.4.6",
             "source": {
@@ -1453,6 +1461,8 @@
             "time": "2022-05-20T13:38:08+00:00"
         },
         {
+=======
+>>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
             "name": "league/commonmark",
             "version": "2.3.3",
             "source": {
@@ -5263,6 +5273,7 @@
             "time": "2022-05-21T10:24:18+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "tightenco/ziggy",
             "version": "v1.4.6",
             "source": {
@@ -5330,6 +5341,8 @@
             "time": "2022-04-08T15:12:23+00:00"
         },
         {
+=======
+>>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.4",
             "source": {
