@@ -2,20 +2,25 @@
 
 namespace Database\Factories;
 
+use App\Models\Etiqueta;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
-class etiquetaFactory extends Factory {
+class EtiquetaFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
 
-  /**
-    * Define the model's default state.
-    *
-    * @return array
-    */
-  public function definition() {
+    protected $model = Etiqueta::class;
 
-    return [
-      'etiqueta' => $this->faker->text(),
-      'color' => $this->faker->text(),
-    ];
-  }
+    public function definition()
+    {
+        return [
+          'etiqueta' => $this->faker->text(50),
+          'color' => $this->faker->text(6),
+        ];
+    }
 }

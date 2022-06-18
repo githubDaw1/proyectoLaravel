@@ -13,12 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/dashboard', function () {
+/*Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__.'/auth.php';*/
+
+Route::get('/usuario', [App\Http\Controllers\UusarioController::class, 'index'])->name('usuario');
+
+Route::get('/', function () {
+  return view('usuario');
+});
+
+Route::get('/tarea', function () {
+  return view('tarea');
+});
+
+Route::view('tarea', 'tarea');
+
+Route::get("tarea", [TareaController::class, 'show']);
+
+
+Route::get('/etiqueta', function () {
+  return view('etiqueta');
+});
+
+Route::view('etiqueta', 'etiqueta');
+
+Route::get("etiqueta", [EtiquetaController::class, 'show']);

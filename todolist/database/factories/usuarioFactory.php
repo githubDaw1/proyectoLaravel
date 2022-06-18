@@ -2,23 +2,28 @@
 
 namespace Database\Factories;
 
+use App\Models\Usuario;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
-class usuarioFactory extends Factory
+class UsuarioFactory extends Factory
 {
     /**
      * Define the model's default state.
      *
      * @return array
-     *
      */
 
-    public function definition() {
+    protected $model = Usuario::class;
+
+    public function definition()
+    {
         return [
-          'email' => $this->faker->unique()->safeEmail(),
-          'password' => $this->faker->text(),
-          'nombre' => $this->faker->name(),
-          'apellidos' => $this->faker->text(),
+          'email' => $this->faker->email(),
+          'password' => Hash::make($this->faker->password()),
+          'nombre' => $this->faker->date(),
+          'apellidos' => $this->faker->randomNumber(),
         ];
     }
 }

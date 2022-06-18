@@ -3,12 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use database\seeders\usuarioSeeder;
-use Database\Seeders\tareaSeeder;
-use Database\Seeders\etiquetaSeeder;
-use App\Models\usuario;
-use App\Models\tarea;
-use App\Models\etiqueta;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,6 +15,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
+        \App\Models\Usuario::factory(10)->create();
+        \App\Models\Tarea::factory(10)->create();
+        \App\Models\Etiqueta::factory(10)->create();
     }
 }
