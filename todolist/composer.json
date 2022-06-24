@@ -8,18 +8,12 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-<<<<<<< HEAD
         "inertiajs/inertia-laravel": "^0.5.4",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.8",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.4",
         "tightenco/ziggy": "^1.0"
-=======
-        "laravel/framework": "^8.75",
-        "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
->>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
     },
     "require-dev": {
         "facade/ignition": "^2.5",

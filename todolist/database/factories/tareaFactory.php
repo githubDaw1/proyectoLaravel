@@ -2,8 +2,9 @@
 
 namespace Database\Factories;
 
-use App\Models\TareaModel;
+use App\Models\Tarea;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class TareaFactory extends Factory
 {
@@ -13,15 +14,15 @@ class TareaFactory extends Factory
      * @return array
      */
 
-    protected $model = TareaModel::class;
+    protected $model = Tarea::class;
 
     public function definition()
     {
         return [
-            "titulo" => $this->faker->title(),
-            "texto" => $this->faker->text(),
-            "fecha" => now(),
-            "completa" => $this->faker->integer(0, 1),
+          'titulo' => $this->faker->title(),
+          'texto' => $this->faker->text(),
+          'fecha' => $this->faker->date(),
+          'completa' => $this->faker->numberBetween(0, 1),
         ];
     }
 }

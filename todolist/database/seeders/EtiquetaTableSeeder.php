@@ -15,12 +15,7 @@ class EtiquetaTableSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
         \App\Models\Etiqueta::factory(10)->create();
         //\App\Models\Etiqueta::factory()->times(10)->create();
-=======
-        \App\Models\EtiquetaModel::factory(10)->create();
-        \App\Models\EtiquetaModel::factory()->times(10)->create();
->>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
     }
 }

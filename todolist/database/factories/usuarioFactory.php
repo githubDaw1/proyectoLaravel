@@ -2,10 +2,10 @@
 
 namespace Database\Factories;
 
-use App\Models\UsuarioModel;
+use App\Models\Usuario;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class UsuarioFactory extends Factory
 {
@@ -15,15 +15,15 @@ class UsuarioFactory extends Factory
      * @return array
      */
 
-    protected $model = UsuarioModel::class;
+    protected $model = Usuario::class;
 
     public function definition()
     {
         return [
-            "email" => $this->faker->email(),
-            "password" => Hash::make("123456789"),
-            "nombre" => now(),
-            "apellido" => $this->faker->lastName(),
+          'email' => $this->faker->email(),
+          'password' => Hash::make($this->faker->password()),
+          'nombre' => $this->faker->date(),
+          'apellidos' => $this->faker->randomNumber(),
         ];
     }
 }

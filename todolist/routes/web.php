@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
 /*Route::get('/', function () {
     return view('welcome');
 });*/
@@ -24,7 +23,9 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/auth.php';*/
 
-Route::get('/usuario', [App\Http\Controllers\UusarioController::class, 'index'])->name('usuario');
+Route::get('usuario', [\pp\Http\Controllers\UsuarioController::class, 'index'])->name('usuario');
+
+require __DIR__.'/auth.php';
 
 Route::get('/', function () {
   return view('usuario');
@@ -34,26 +35,15 @@ Route::get('/tarea', function () {
   return view('tarea');
 });
 
-Route::view('tarea', 'tarea');
+Route::view('tarea', [App\Http\Controllers\TareaController::class, 'show'])->name('tarea');
 
-Route::get("tarea", [TareaController::class, 'show']);
+//Route::get("tarea", [TareaController::class, 'show']);
 
 
 Route::get('/etiqueta', function () {
   return view('etiqueta');
 });
 
-Route::view('etiqueta', 'etiqueta');
+Route::view('etiqueta', [App\Http\Controllers\EtiquetaController::class, 'show'])->name('tarea');
 
 Route::get("etiqueta", [EtiquetaController::class, 'show']);
-=======
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-require __DIR__.'/auth.php';
->>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f

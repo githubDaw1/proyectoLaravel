@@ -128,7 +128,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
 
         <div class="flex-center position-ref full-height">
           <div class="content">
@@ -140,7 +139,5 @@
           </div>
         </div>
 
-=======
->>>>>>> a6ee41003971d12ed5fc2a825c4dbaf7c882239f
     </body>
 </html>
