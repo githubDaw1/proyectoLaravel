@@ -2,8 +2,9 @@
 
 namespace Database\Factories;
 
-use App\Models\EtiquetaModel;
+use App\Models\Etiqueta;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class EtiquetaFactory extends Factory
 {
@@ -13,13 +14,13 @@ class EtiquetaFactory extends Factory
      * @return array
      */
 
-    protected $model = EtiquetaModel::class;
+    protected $model = Etiqueta::class;
 
     public function definition()
     {
         return [
-            "etiqueta" => $this->faker->text(50),
-            "color" => $this->faker->text(6),
+          'etiqueta' => $this->faker->text(50),
+          'color' => $this->faker->text(6),
         ];
     }
 }
